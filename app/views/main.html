@@ -2,10 +2,12 @@
 <div class="container">
 
   <div class="row">
-    <div class="col-sm-12">Log In - Register
-      <p></p>
+    <div class="col-sm-12">
+      <h1>Survey Pop</h1>
+      <h2>Find Out What Your Customers Are Thinking</h2>
+      <p>Log In - Register</p>
       <p>Your Business Name: <input type="text" name="businessName" ng-model="businessName"></input> <button class="btn btn-sm btn-primary" ng-click="changeBusiness()">Edit</button></p>
-      <p>Yelp Review Score: 2.5</p>
+      <p>Yelp Review Score: 2.5 {{yelp.rating}}</p>
       <p>Add Question: <input type="text" name="question1" ng-model="question1"></input> <button class="btn btn-sm btn-primary" ng-click="submitQuestion()">Add Question</button></p>
       <h2>Current Survey Questions</h2>
       <p>Question 1: Tell us a general description of your experience.</p>

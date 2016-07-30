@@ -12,7 +12,9 @@ angular.module('angularAppApp')
     // Service logic
     // ...
 
-    
+
+
+    /*
     var generateNonce = function(length) {
             var text = "";
             var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -22,14 +24,22 @@ angular.module('angularAppApp')
             return text;
         }
     console.log(generateNonce(32));
-    
+    */
+
+    /*
+    Consumer Key  wfmrdaQihSpXxYS1YTwG1A
+    Consumer Secret 4pZdOhA4K1uyko7VhFHtly_N47k
+    Token G68wajA06Nij1dlq1coGDigKrc0TuK2M
+    Token Secret  QtfGTrldDslaqGVZszWVxrQ-e1o
+    */
 
 
     // Public API here
-    return $resource('https://crossorigin.me/https://api.yelp.com/v2/search/', {}, {
+    /*
+    return $resource('https://crossorigin.me/https://api.yelp.com/v2/search', {}, {
       query: {
         method:'GET',
-        params:{
+        params:{ 
           oauth_consumer_key: 'wfmrdaQihSpXxYS1YTwG1A',
           oauth_token: 'G68wajA06Nij1dlq1coGDigKrc0TuK2M',
           oauth_signature_method: 'HMAC-SHA1',
@@ -42,4 +52,7 @@ angular.module('angularAppApp')
         isArray:false
       }
     });
+    */
+
+
   });

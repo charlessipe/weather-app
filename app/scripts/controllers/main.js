@@ -9,14 +9,34 @@
  */
 
 angular.module('angularAppApp')
-  .controller('MainCtrl', function ($scope, $http, current, places) {
-    $scope.current = current.query();
+  .controller('MainCtrl', function ($scope, citysearch) {
 
-    console.log($scope.current);
+    $scope.citiesFound = citysearch.find();
+
+    console.log($scope.citiesFound);
+
+    $scope.findCities = function(){
+      $scope.citiesFound = citysearch.find({
+        query: $scope.location
+      });
+      $scope.searchQuery = $scope.location;
+    };
+
+    //$scope.current = current.query();
+
+    //console.log($scope.current);
+
+    /*$scope.currentWeather = current.query({
+      cityID: 1234567
+    });
+
+    $scope.citiesFound = citysearch.find({
+      query: $scope.searchText
+    });*/
 
     //$scope.yelp = yelp.query();
 
-    $scope.places = places.query();
+    /*$scope.places = places.query();
 
     console.log($scope.places);
 
@@ -24,8 +44,8 @@ angular.module('angularAppApp')
         $scope.current = current.query({
             location: $scope.location
         });
-
-  };
+    */
+  });
 
     /*
     // Request API access: http://www.yelp.com/developers/getting_started/api_access
@@ -47,5 +67,3 @@ angular.module('angularAppApp')
       console.error(err);
     });
     */
-
-  });

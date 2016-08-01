@@ -12,8 +12,6 @@ angular.module('angularAppApp')
     // Service logic
     // ...
 
-    var meaningOfLife = 42;
-
     // Google API key AIzaSyDjqFrrexwOFxK8OQb6gDhslHir22W05ik
 
     // Public API here

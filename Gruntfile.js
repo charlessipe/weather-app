@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:charlessipe/angular-app.git',
+          remote: 'git@github.com:charlessipe/weather-app.git',
           branch: 'gh-pages'
         }
       }

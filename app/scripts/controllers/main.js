@@ -9,7 +9,9 @@
  */
 
 angular.module('angularAppApp')
-  .controller('MainCtrl', function ($scope, citysearch) {
+  .controller('MainCtrl', function ($scope, citysearch, $localStorage) {
+
+    $scope.storage = $localStorage;
 
     $scope.citiesFound = citysearch.find();
 
